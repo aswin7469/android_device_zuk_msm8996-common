@@ -145,6 +145,12 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.hwui.drop_shadow_cache_size=24 \
     ro.sf.compbypass.enable=0
 
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000
+
 # IMS stuffs
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
