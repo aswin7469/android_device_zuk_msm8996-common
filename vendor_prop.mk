@@ -220,6 +220,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sw_mbn_openmkt=1 \
     persist.vendor.radio.hw_mbn_update=1 \
     persist.radio.primarycard=true \
+    persist.radio.aosp_usr_pref_sel=true \
     persist.radio.flexmap_type=dds \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.radio.rat_on=combine \
