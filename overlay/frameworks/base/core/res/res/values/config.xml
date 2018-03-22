@@ -601,4 +601,8 @@
 
     <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>
+
+    <!-- Auto-brightness during doze -->
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
 </resources>
