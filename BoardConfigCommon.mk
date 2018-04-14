@@ -175,7 +175,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
 TARGET_USES_INTERACTION_BOOST := true
 
 # QCOM
