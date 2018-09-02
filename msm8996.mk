@@ -391,10 +391,6 @@ PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION=/dev/block/bootdevice/by-name/factory
 $(call inherit-product, build/target/product/verity.mk)
 
-# VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
-
 # VNDK FIXME: master: compat for libprotobuf
 # See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
 PRODUCT_PACKAGES += \
