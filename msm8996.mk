@@ -255,10 +255,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
-# IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/fpc1020tp.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fpc1020tp.kl \
@@ -377,6 +373,10 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
