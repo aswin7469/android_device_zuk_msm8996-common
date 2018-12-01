@@ -134,6 +134,10 @@ PRODUCT_PACKAGES += \
     Snap \
     libmm-qcamera
 
+# CarrierConfig
+PRODUCT_PACKAGES += \
+    CarrierConfig
+
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
