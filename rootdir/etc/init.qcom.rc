@@ -52,11 +52,16 @@ on init
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
     mount_all /vendor/etc/fstab.qcom --early
 
     # Start HW service manager early
     start hwservicemanager
+
+    # start RIL
+    start vendor.ril-daemon
+    start ril-daemon
+
 
     # Set permissions for persist partition
     chown root system /mnt/vendor/persist
@@ -201,6 +206,8 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
     chown root audio /sys/kernel/boot_adsp/boot
+
+on post-fs-data
 
     # SSR setup
     write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
