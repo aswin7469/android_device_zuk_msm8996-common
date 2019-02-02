@@ -9,3 +9,6 @@ ro.oem_unlock_supported                          u:object_r:oem_unlock_prop:s0
 
 # Qseecomd
 sys.listeners.registered                         u:object_r:vendor_tee_listener_prop:s0
+
+# Dirac
+persist.audio.dirac.       u:object_r:dirac_prop:s0
