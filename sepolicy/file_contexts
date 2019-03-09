@@ -25,3 +25,6 @@
 /sys/devices/soc/soc:fpc1020/proximity_state         u:object_r:sysfs_fingerprint:s0
 /sys/devices/soc/soc:fpc1020/irq                     u:object_r:sysfs_fingerprint:s0
 /sys/devices/soc/soc:fpc1020/utouch_disable          u:object_r:sysfs_fingerprint:s0
+
+# WLAN fwpath
+/sys/module/wlan/parameters/fwpath    u:object_r:sysfs_wlan_fwpath:s0
