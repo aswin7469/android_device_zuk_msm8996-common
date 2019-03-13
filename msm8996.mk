@@ -138,6 +138,11 @@ PRODUCT_PACKAGES += \
     mm-qcamera-app \
     libmm-qcamera
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
