@@ -212,6 +212,9 @@ on boot
     chown system system /sys/devices/virtual/touch/tp_dev/gesture_on
     chmod 0660 /sys/devices/virtual/touch/tp_dev/gesture_on
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
     # Access permission for Bluetooth
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
@@ -340,9 +343,6 @@ on boot
     # Our RIL doesn't send multiple RIL_UNSOL_CALL_RING so
     # without this it may trigger the phone ring tone only once.
     setprop ro.telephony.call_ring.multiple false
-
-    # Wifi firmware reload path
-    chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 on property:sys.boot_completed=1
     # Enable ZRAM on boot_complete
