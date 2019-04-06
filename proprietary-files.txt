@@ -506,6 +506,12 @@ vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/hw/keystore.msm8953.so:vendor/lib64/hw/keystore.msm8996.so|455b7f9ec7b5c7acd6ada0789a529468e71f6f45
 vendor/lib/hw/keystore.msm8953.so:vendor/lib/hw/keystore.msm8996.so|bf2f1c779cf88ff5ab69b3044b45dcb8974d0b47
 
+# Listen
+vendor/lib64/hw/sound_trigger.primary.msm8996.so 
+vendor/lib/hw/sound_trigger.primary.msm8996.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libsmwrapper.so
+
 # Media - from daisy 9/PKQ1.180917.001/V10.0.7.0.PDLMIXM
 lib/extractors/libmmparser.so|4bca55f03b1b21c7dfbf528b7fdb2c84d1d61910
 lib/libFileMux.so|5961dd16c9c6808e8321abf4b0266a9926ef327b
