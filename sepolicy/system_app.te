@@ -16,4 +16,3 @@ userdebug_or_eng(`
 	permissive system_app;
 ')
 get_prop(system_app, oem_unlock_prop);
-get_prop(system_app, bt_mac_prop);
