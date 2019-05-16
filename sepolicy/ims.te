@@ -1,1 +1,2 @@
 allow ims ctl_default_prop:property_service set;
+set_prop(ims, ctl_stop_prop)
