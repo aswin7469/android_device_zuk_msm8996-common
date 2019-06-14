@@ -27,4 +27,6 @@
     <!-- 30 seconds for default screen timeout -->
     <integer name="def_screen_off_timeout">30000</integer>
 
+    <!-- Default state of tap to wake -->
+    <bool name="def_double_tap_to_wake">false</bool>
 </resources>
