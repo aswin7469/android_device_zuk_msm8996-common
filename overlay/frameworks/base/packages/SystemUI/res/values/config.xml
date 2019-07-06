@@ -26,8 +26,4 @@
 
     <!-- Doze: does this device support STATE_DOZE and STATE_DOZE_SUSPEND?  -->
     <bool name="doze_display_state_supported">true</bool>
-
-    <!-- Show battery icon in the QS Panel instead of in the header -->
-    <bool name="config_batteryInQSPanel">false</bool>
-
 </resources>
