@@ -69,11 +69,12 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|00015214071f7e8cdf5c9
 vendor/lib64/libbtnv.so|b5fc1d89ca68a5e39984b375ed308eb040007c73
 vendor/lib64/libbt-hidlclient.so|56874d3b5e5981fa047a544a9ba8425de0228268
 
-# Bluetooth aptX - from taimen PQ2A.190205.002
-lib/libaptX_encoder.so|984739a0bc968e18f75ced205733fe3f51c2d4f0 
-lib/libaptXHD_encoder.so|974c486e4ca03faa0713553d9dfe2995ac93e01c 
+# Bluetooth (aptX) - from crosshatch - PD1A.180720.030
+lib/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+lib/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
 lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
+
 
 # Bluetooth (shared dependencies) - from LA.UM.7.5.r1-04800-8x96.0
 lib64/vendor.qti.hardware.fm@1.0.so|1d96a8b1f94098c73bae36d36dbaa32aad304a96
