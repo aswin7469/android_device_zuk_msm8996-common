@@ -15,3 +15,4 @@ allow system_app sysfs:file { getattr open };
 userdebug_or_eng(`
 	permissive system_app;
 ')
+get_prop(system_app, oem_unlock_prop);
