@@ -190,11 +190,6 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-11-05
 
-# System as root
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init root=/dev/dm-0
-BOARD_ROOT_EXTRA_FOLDERS := persist
-
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
