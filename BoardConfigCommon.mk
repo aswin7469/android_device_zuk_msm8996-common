@@ -157,6 +157,9 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 DEVICE_SPECIFIC_GPS_PATH := $(VENDOR_PATH)/gps
 
+# Gestures
+TARGET_GESTURES_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
+
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(VENDOR_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
@@ -177,7 +180,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
 TARGET_USES_INTERACTION_BOOST := true
 TARGET_USES_NON_LEGACY_POWERHAL := true
 
