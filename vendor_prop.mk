@@ -209,6 +209,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.use_old_mnc_mcc_format=true \
     persist.data.qmi.adb_logmask=0 \
     persist.net.doxlat=true \
+    persist.vendor.radio.procedure_bytes=SKIP \
     persist.radio.force_on_dc=true \
     persist.radio.multisim.config=dsds \
     persist.radio.redir_party_num=1 \
