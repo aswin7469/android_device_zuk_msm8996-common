@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calib.cfg
 
+# Dirac
+PRODUCT_PACKAGES += \
+    Dirac
+
 # Doze mode
 PRODUCT_PACKAGES += \
     ZukDoze

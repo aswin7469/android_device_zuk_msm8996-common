@@ -16,6 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.bt.enable.splita2dp=false \
+    persist.audio.dirac.speaker=true
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7 \
     ro.vendor.audio.sdk.fluencetype=fluence \
