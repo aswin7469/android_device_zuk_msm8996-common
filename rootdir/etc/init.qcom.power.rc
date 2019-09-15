@@ -185,3 +185,5 @@ service charger /system/bin/charger
     group system graphics input
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
+    group system graphics
+#    seclabel u:r:healthd:s0
