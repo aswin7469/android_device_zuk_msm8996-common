@@ -281,7 +281,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.zuk_8996
 
 # LiveDisplay
- PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
@@ -317,7 +317,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
+    android.hardware.power@1.2-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
