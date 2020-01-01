@@ -201,6 +201,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/i2c-5                0660   media       media
 /dev/input/event*         0660   system     input
 /dev/avtimer              0660   system     audio
+/dev/aud_pasthru_adsp     0660   system     audio
 
 # TFA9890 For SmartPA
 /dev/tfa9890              0660   media       media
