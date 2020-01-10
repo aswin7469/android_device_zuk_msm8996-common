@@ -438,13 +438,6 @@ on property:sys.listeners.registered=*
     setprop sys.keymaster.loaded ${sys.listeners.registered}
     setprop vendor.sys.keymaster.loaded ${sys.listeners.registered}
 
-service time_daemon /vendor/bin/time_daemon
-    class main
-    user system
-    group system
-    capabilities SYS_TIME
-    writepid /dev/cpuset/system-background/tasks
-
 # Start camera server as daemon
 service qcamerasvr /vendor/bin/mm-qcamera-daemon
     class late_start
