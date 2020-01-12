@@ -173,13 +173,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.ignore_dom_time=10 \
     persist.logd.size.radio=2M \
     persist.radio.data_ltd_sys_ind=1 \
+    persist.rcs.supported=1 \
     persist.radio.multisim.config=dsds \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.radio.calls.on.ims=1 \
-    persist.dbg.ims_volte_enable=1
+    persist.dbg.ims_volte_enable=1 \
+    persist.radio.VT_ENABLE=1 \
+    persist.radio.volte.dan_support=true \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
+    persist.sys.cust.lte_config=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
