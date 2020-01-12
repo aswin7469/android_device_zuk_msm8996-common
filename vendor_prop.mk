@@ -89,7 +89,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     persist.radio.aosp_usr_pref_sel=true \
     persist.data.netmgrd.qos.enable=true \
-    ro.vendor.use_data_netmgrd=true
+    ro.vendor.use_data_netmgrd=true \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
 
 # Display (Qualcomm AD)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -185,7 +187,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.radio.calls.on.ims=1 \
-    persist.dbg.ims_volte_enable=1
+    persist.dbg.ims_volte_enable=1 \
+    persist.radio.volte.dan_support=true \
+    persist.sys.cust.lte_config=true \
+    persist.rcs.supported=1 \
+    persist.radio.VT_ENABLE=1
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true
