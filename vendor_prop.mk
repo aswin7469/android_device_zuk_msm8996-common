@@ -188,6 +188,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=20,20 \
+    ro.telephony.use_old_mnc_mcc_format=true \
     persist.data.qmi.adb_logmask=0 \
     persist.net.doxlat=true \
     persist.radio.force_on_dc=true \
