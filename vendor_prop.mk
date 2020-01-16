@@ -145,6 +145,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     qemu.hw.mainkeys=0
 
+# ParanoidDoze
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sensor.proximity=true
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so \

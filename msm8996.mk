@@ -200,10 +200,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Dirac
 
-# Doze mode
-PRODUCT_PACKAGES += \
-    ZukDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
@@ -329,6 +325,10 @@ PRODUCT_PACKAGES += \
     libOmxVdecHevc \
     libstagefrighthw \
     libmm-omxcore
+
+# Paranoid Doze
+PRODUCT_PACKAGES += \
+    ParanoidDoze
 
 # Power
 PRODUCT_PACKAGES += \
