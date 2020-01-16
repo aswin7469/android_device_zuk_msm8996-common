@@ -378,11 +378,6 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system \
-    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -434,7 +429,7 @@ PRODUCT_BOOT_JARS += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.zuk_msm8996 \
+    android.hardware.biometrics.fingerprint@2.1-service.zuk_msm8996
 
 # Thermal
 PRODUCT_PACKAGES += \
