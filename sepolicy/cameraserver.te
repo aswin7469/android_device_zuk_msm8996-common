@@ -1,0 +1,5 @@
+allow cameraserver mediacodec:binder call;
+allow cameraserver vendor_file:file { read }; 
+allow cameraserver vendor_file:file { open }; 
+allow cameraserver vendor_file:file { getattr };
+allow cameraserver vendor_file:file { execute };
