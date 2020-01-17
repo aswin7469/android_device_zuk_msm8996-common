@@ -1,0 +1,7 @@
+allow dpmd device:file { write };
+allow dpmd dpmd:capability { sys_admin };
+allow dpmd vendor_file:file { read };
+allow dpmd device:file { open };
+allow dpmd vendor_file:file { open };
+allow dpmd vendor_file:file { getattr };
+allow dpmd vendor_file:file { execute };
