@@ -345,6 +345,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# QTI common
+-include vendor/qcom/common/*/qti-*.mk
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
