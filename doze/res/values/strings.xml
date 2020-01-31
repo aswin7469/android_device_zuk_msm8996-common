@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="raise_to_wake_gesture_title">Lift to wake device</string>
+    <string name="raise_to_wake_gesture_summary">Wake device to pulse notifications</string> 
+</resources>

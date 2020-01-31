@@ -50,6 +50,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     private SwitchPreference mPickUpPreference;
     private SwitchPreference mHandwavePreference;
+    private SwitchPreference mRaiseToWakePreference;
     private SwitchPreference mPocketPreference;
 
     private Handler mHandler = new Handler();
@@ -82,6 +83,11 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mPickUpPreference.setEnabled(dozeEnabled);
         mPickUpPreference.setOnPreferenceChangeListener(this);
 
+
+        mRaiseToWakePreference = (SwitchPreference) findPreference(Utils.GESTURE_RAISE_TO_WAKE_KEY);
+        mRaiseToWakePreference.setEnabled(dozeEnabled);
+        mRaiseToWakePreference.setOnPreferenceChangeListener(this);
+
         mHandwavePreference = (SwitchPreference) findPreference(Utils.GESTURE_HAND_WAVE_KEY);
         mHandwavePreference.setEnabled(dozeEnabled);
         mHandwavePreference.setOnPreferenceChangeListener(this);
@@ -101,6 +107,9 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         } else {
             tiltSensorCategory.setDependency(Utils.ALWAYS_ON_DISPLAY);
             proximitySensorCategory.setDependency(Utils.ALWAYS_ON_DISPLAY);
+            mPickUpPreference.setDependency(Utils.GESTURE_RAISE_TO_WAKE_KEY);
+            mPocketPreference.setDependency(Utils.GESTURE_RAISE_TO_WAKE_KEY);
+
         }
     }
 
@@ -160,6 +169,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
         mPickUpPreference.setEnabled(isChecked);
         mHandwavePreference.setEnabled(isChecked);
+        mRaiseToWakePreference.setEnabled(isChecked);
         mPocketPreference.setEnabled(isChecked);
     }
 
