@@ -236,3 +236,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# WFD
+debug.sf.enable_hwc_vds=1
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
