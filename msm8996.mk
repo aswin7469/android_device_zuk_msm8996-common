@@ -29,7 +29,6 @@ $(call inherit-product, vendor/zuk/msm8996-common/msm8996-common-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pixys
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -393,6 +392,7 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
+    libwifi-hal-qcom \
     wpa_supplicant \
     wpa_supplicant.conf
 
@@ -430,3 +430,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
+
+#phix hals
+PRODUCT_BOARD_PLATFORM := msm8996
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
