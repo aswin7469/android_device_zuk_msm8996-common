@@ -219,6 +219,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
 # WFD
-debug.sf.enable_hwc_vds=1
-persist.debug.wfd.enable=1
-persist.sys.wfd.virtual=0
+    debug.sf.enable_hwc_vds=1 \
+    persist.debug.wfd.enable=1 \
+    vendor.video.disable.ubwc=1 \
+    persist.sys.wfd.virtual=0 \
+    vendor.gralloc.disable_wb_ubwc=1 \
+    persist.sys.wfd.nohdcp=1
