@@ -410,11 +410,8 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
-    libqdMetaData \
-    libqdMetaData.system
+    libaacwrapper \
+    libnl
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
