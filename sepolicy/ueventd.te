@@ -1,0 +1,5 @@
+allow ueventd ueventd:capability { sys_admin };
+allow ueventd vfat:dir { search };
+allow ueventd vfat:file { read };
+allow ueventd vfat:file { open };
+allow ueventd vfat:file { getattr };
