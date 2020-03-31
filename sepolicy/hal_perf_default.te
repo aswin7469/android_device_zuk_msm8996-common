@@ -1,1 +1,7 @@
 set_prop(hal_perf_default, vendor_mpctl_prop)
+
+allow hal_perf_default hal_perf_default:capability { sys_admin }; 
+allow hal_perf_default hal_perf_default:capability { dac_override }; 
+allow hal_perf_default init:dir { search }; 
+allow hal_perf_default init:dir { open read write };
+allow hal_perf_default init:file { open  read  write };

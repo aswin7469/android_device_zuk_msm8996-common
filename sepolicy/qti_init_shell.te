@@ -10,6 +10,11 @@ allow qti_init_shell persist_bluetooth_file:dir { add_name create search write }
 allow qti_init_shell persist_bluetooth_file:file { create getattr open read write };
 
 # Allow qti_init_shell to read cmdline
-allow qti_init_shell proc_cmdline:file { getattr open read };
+allow qti_init_shell proc_cmdline:file { getattr open read }; 
+allow qti_init_shell vfat:dir { search }; 
+allow qti_init_shell vfat:dir { read }; 
+allow qti_init_shell vfat:file { getattr read }; 
+allow qti_init_shell vfat:file { open };
+allow qti_init_shell vfat:dir { open };
 
 set_prop(qti_init_shell, oem_unlock_prop)
