@@ -4,3 +4,7 @@ allow hal_power_default sysfs_devfreq:file { open write };
 allow hal_power_default sysfs_kgsl:file { open write };
 allow hal_power_default device_latency:chr_file { open write };
 allow hal_power_default sysfs_doubletap:file { open write };
+allow hal_power_default proc:file { write };
+allow hal_power_default proc:file { open };
+allow hal_power_default sysfs:file rw_file_perms;
+allow hal_power_default default_android_hwservice:hwservice_manager { add };
