@@ -72,6 +72,15 @@ vendor/lib64/libbt-hidlclient.so|4682c8711fe78bb73448b34c30181948989400bf
 # Bluetooth (dependencies) - from LA.UM.8.6.r1-03400-89xx.0
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|027c226838e80a04209e5fb6a8882ce78c3b4222
 
+# Bluetooth ANT+ - from OnePlus5 - PKQ1.180716.001 2002242003
+-lib/libantradio.so|d41385a586a43d1c1ed1e315b65fa26bd2393411
+lib64/com.qualcomm.qti.ant@1.0.so|29ecc1a9134dd2146f358e65c830059d3fa6c6d9
+-lib64/libantradio.so|68dd86841ef99508967f3bc28103bda402cee915
+
+# Bluetooth ANT+ (vendor) - from OnePlus5 - PKQ1.180716.001 2002242003
+vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|50056005be5fe5a8420599dd70e4266abf6a9866
+vendor/lib64/com.qualcomm.qti.ant@1.0.so|05e6190e6feb2f23b86e1ce4517b73712465bb2d
+
 # Bluetooth (aptX) -  from coral-user 10 QQ2A.200305.003 6156912 release
 system_ext/lib64/libaptX_encoder.so|59d896f337f570eaf54a480261f50ccc 
 system_ext/lib64/libaptXHD_encoder.so|18e6569d5bf4e3b1124e9f95e1b1df4a 
