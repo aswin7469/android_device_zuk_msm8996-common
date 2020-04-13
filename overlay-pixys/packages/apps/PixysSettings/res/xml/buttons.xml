@@ -43,6 +43,13 @@
             android:title="@string/hardware_keys_single_tap_title" >
         </com.pixys.settings.preferences.ActionPreference>
 
+        <com.pixys.settings.preferences.ActionPreference 
+	    android:key="hwkeys_button_home_single_tap" 
+            android:summary="@string/hardware_keys_single_tap_summary" 
+	    android:title="@string/hardware_keys_single_press_title" >
+        </com.pixys.settings.preferences.ActionPreference>
+
+
         <com.pixys.settings.preferences.ActionPreference
             android:key="hwkeys_button_home_long_press" 
             android:summary="@string/hardware_keys_long_press_summary"
@@ -74,12 +81,12 @@
             android:title="@string/u-touch_keys_appswitch_key_title" >
         </com.pixys.settings.preferences.ActionPreference>
 
-
         <com.pixys.settings.preferences.ActionPreference 
-            android:key="hwkeys_button_menu_single_tap" 
+	    android:key="hwkeys_button_menu_single_tap" 
             android:summary="@string/hardware_keys_single_tap_summary" 
-            android:title="@string/u-touch_keys_assist_key_title" >
+	    android:title="@string/u-touch_keys_menu_key_title" >
         </com.pixys.settings.preferences.ActionPreference>
+
 
     </PreferenceCategory>
 
