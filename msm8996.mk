@@ -111,7 +111,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-service \
     audio.a2dp.default \
     audio.primary.msm8996 \
-    audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
