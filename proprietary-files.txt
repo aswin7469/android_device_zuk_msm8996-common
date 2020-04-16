@@ -84,8 +84,8 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so|05e6190e6feb2f23b86e1ce4517b73712465bb2
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|db3afdb3dcc6e39effed66e6397131a1dafd86a1
 
 # Bluetooth (aptX) -  from coral-user 10 QQ2A.200305.003 6156912 release
-lib64/libaptX_encoder.so|59d896f337f570eaf54a480261f50ccc 
-lib64/libaptXHD_encoder.so|18e6569d5bf4e3b1124e9f95e1b1df4a 
+product/lib64/libaptX_encoder.so|59d896f337f570eaf54a480261f50ccc 
+product/lib64/libaptXHD_encoder.so|18e6569d5bf4e3b1124e9f95e1b1df4a 
 
 # Camera
 lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
