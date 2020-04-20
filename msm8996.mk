@@ -101,7 +101,6 @@ PRODUCT_PACKAGES += \
      antradio_app \
      libantradio
 
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
@@ -345,11 +344,7 @@ PRODUCT_PACKAGES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    av \
-    bt \
-    perf \
-    telephony \
-    wfd
+    telephony
 
 # RIL
 PRODUCT_PACKAGES += \
