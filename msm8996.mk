@@ -344,7 +344,8 @@ PRODUCT_PACKAGES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    telephony
+    telephony \
+     bt
 
 # RIL
 PRODUCT_PACKAGES += \
