@@ -284,8 +284,6 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -402,6 +400,12 @@ $(call inherit-product, build/target/product/verity.mk)
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
+
+# VNDK FIXME: master: compat for libprotobuf
+# See https://android-review.googlesource.com/c/platform/prebuilts/vndk/v28/+/1109518
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
 
 # Vibrator
 PRODUCT_PACKAGES += \
