@@ -159,7 +159,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
     persist.data.iwlan=1 \
     persist.data.iwlan.ipsec.ap=1 \
-    persist.vendor.sys.cnd.iwlan=1
+    persist.vendor.sys.cnd.iwlan=1 \
+    ro.telephony.iwlan_operation_mode=legacy
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
