@@ -134,6 +134,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.nohdcp=1 \
     debug.sf.enable_hwc_vds=1
 
+# HwUi
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    hwui.disable_vsync=true \
+    debug.sf.recomputecrop=0 \
+    debug.egl.hw=1 \
+    debug.composition.type=c2d  \
+    persist.sys.composition.type=c2d \
+    ro.config.dyn_ram=true \
+    ro.hwui.texture_cache_size=276 \
+    ro.hwui.layer_cache_size=144 \
+    ro.hwui.r_buffer_cache_size=24 \
+    ro.hwui.path_cache_size=96 \
+    ro.hwui.gradient_cache_size=3 \
+    ro.hwui.drop_shadow_cache_size=24 \
+    dalvik.vm.heaptargetutilization=0.75 \
+    debug.sf.disable_backpressure=0 \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.hw=1 \
+    ro.sf.compbypass.enable=0
+
 # IMS stuffs
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
