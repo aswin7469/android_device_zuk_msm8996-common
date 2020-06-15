@@ -65,7 +65,7 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     restorecon_recursive /mnt/vendor/persist
 
-on late-fs
+on late-init
     # Start services for bootanim
     start servicemanager
     start surfaceflinger
@@ -73,6 +73,7 @@ on late-fs
     start vendor.configstore-hal
     start vendor.gralloc-2-0
 
+on late-fs
     # Mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
