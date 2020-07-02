@@ -118,6 +118,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=1 \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
+    debug.sdm.support_writeback=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     persist.hwc.enable_vds=1 \
@@ -128,8 +129,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
     persist.debug.wfd.enable=1 \
-    persist.sys.wfd.nohdcp=1 \
-    debug.sf.enable_hwc_vds=1
+    persist.sys.wfd.nohdcp=1
 
 # HwUi
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
