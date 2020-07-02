@@ -273,3 +273,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.virtual=0 \
     vendor.gralloc.disable_wb_ubwc=1 \
     persist.sys.wfd.nohdcp=1
+
+# Zygote preforking
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
