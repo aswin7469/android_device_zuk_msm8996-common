@@ -50,16 +50,16 @@ void check_device()
 
 	if (sys.totalram > 3072ull * 1024 * 1024) {
 		// from - phone-xxxhdpi-4096-dalvik-heap.mk
-		heapminfree = "4m";
-		heapmaxfree = "16m";
+		heapminfree = "8m";
+		heapmaxfree = "32m";
 	} else {
 		// from - phone-xxhdpi-3072-dalvik-heap.mk
-		heapminfree = "512k";
-		heapmaxfree = "8m";
+		heapminfree = "4m";
+		heapmaxfree = "16m";
 	}
 }
 
-void vendor_load_properties() 
+void vendor_load_properties()
 {
 	check_device();
 
