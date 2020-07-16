@@ -20,13 +20,16 @@ set -e
 
 INITIAL_COPYRIGHT_YEAR=2017
 
+export DEVICE_COMMON=msm8996-common
+export VENDOR=zuk
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-LINEAGE_ROOT="${MY_DIR}/../../.."
+PIXYS_ROOT="${MY_DIR}/../../.."
 
-HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+HELPER="${PIXYS_ROOT}/vendor/pixys/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -34,7 +37,7 @@ fi
 source "${HELPER}"
 
 # Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${PIXYS_ROOT}" true
 
 # Copyright headers and guards
 write_headers "z2_plus z2_row"
@@ -47,13 +50,13 @@ write_footers
 
 if [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
-    setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false
+    setup_vendor "${DEVICE}" "${VENDOR}" "${PIXYS_ROOT}" false
 
     # Copyright headers and guards
     write_headers
 
     # The standard device blobs
-    write_makefiles "${MY_DIR}/../${DEVICE}/proprietary-files.txt" true
+    write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
     # Finish
     write_footers
