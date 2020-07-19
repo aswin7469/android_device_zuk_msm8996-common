@@ -304,6 +304,11 @@ vendor/lib64/vendor.qti.latency@2.0.so|0144eec541989f450695ec8cbdd595df4009fe1a
 # Fingerprint
 lib64/hw/fingerprint.qcom.so:vendor/lib64/hw/fingerprint.qcom.so
 
+# Dirac
+etc/diracmobile.config
+lib/libDiracAPI_SHARED.so
+lib/soundfx/libdirac.so
+
 # DPM - from daisy - QKQ1.191002.002 V11.0.2.0.QDLMIXM
 product/bin/dpmd|cac8f3eadeeec202f56d5b5f7a8c75e82e376d9f
 product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -455,45 +460,6 @@ vendor/firmware/a530v1_pm4.fw
 vendor/firmware/a530v2_seq.fw2
 vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
-
-# IMS
--app/uceShimService/uceShimService.apk
-etc/permissions/com.qualcomm.qti.imscmservice.xml
-etc/permissions/qti-vzw-ims-internal.xml
-framework/com.qualcomm.qti.imscmservice@1.0-java.jar
-lib64/com.qualcomm.qti.imscmservice@1.0.so
-product/lib64/lib-imscamera.so|33571466bd2b6368439f84e4361b1af6
-product/lib64/lib-imsvideocodec.so|c3cc4c9b5788c91c29f363b4cf17e1f2
-product/lib64/lib-imsvt.so|5f81ee6f25220b694374670de1d72ab4
-product/lib64/lib-imsvtextutils.so|96038273295bb342205a32b1d43d1c4e
-product/lib64/lib-imsvtutils.so|b8b6309f4f4dd16605ee51f1bcd202c4
-lib64/libdiag_system.so
-product/lib64/libimscamera_jni.so
-product/lib64/libimsmedia_jni.so
-vendor/lib64/lib-imsvtcore.so|f6808e788543e0b47b6a3664b7caf799
-vendor/lib64/lib-imsxml.so|16a2ab49a045cd1f7a46bb8b60845df0
-lib64/librcc.so
-lib64/vendor.qti.imsrtpservice@1.0.so
--priv-app/ims/ims.apk|426be1b83d6f608107d6dcf587080551abeab3e2
-vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon
-vendor/bin/imsqmidaemon
-vendor/bin/imsrcsd
-vendor/framework/qti-vzw-ims-internal.jar
-vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
-vendor/lib64/lib-dplmedia.so
-vendor/lib64/lib-imsSDP.so
-vendor/lib64/lib-imscmservice.so
-vendor/lib64/lib-imsdpl.so
-vendor/lib64/lib-imsqimf.so
-vendor/lib64/lib-imsxml.so
-vendor/lib64/lib-rtpcommon.so
-vendor/lib64/lib-rtpcore.so
-vendor/lib64/lib-rtpdaemoninterface.so
-vendor/lib64/lib-rtpsl.so
-vendor/lib64/lib-uceservice.so
-vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
 # IMS - from daisy - QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|ba5ffc588422c1b0f3ac8135314db2c88d62671e
@@ -672,6 +638,45 @@ vendor/etc/init/dataadpl.rc|cd4907d9bfd438fe5f5c86f5d6cec590ac0bac2a
 vendor/etc/init/dataqti.rc|6abfd1a850d782adbbb6f42c9d8ca870036b2ad1
 vendor/etc/init/netmgrd.rc|fd3457c69a9fab11b87d0d1b494188fe089684cd
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
+
+# RIL (IMS)
+-app/uceShimService/uceShimService.apk
+etc/permissions/com.qualcomm.qti.imscmservice.xml
+etc/permissions/qti-vzw-ims-internal.xml
+framework/com.qualcomm.qti.imscmservice@1.0-java.jar
+lib64/com.qualcomm.qti.imscmservice@1.0.so
+product/lib64/lib-imscamera.so|33571466bd2b6368439f84e4361b1af6
+product/lib64/lib-imsvideocodec.so|c3cc4c9b5788c91c29f363b4cf17e1f2
+product/lib64/lib-imsvt.so|5f81ee6f25220b694374670de1d72ab4
+product/lib64/lib-imsvtextutils.so|96038273295bb342205a32b1d43d1c4e
+product/lib64/lib-imsvtutils.so|b8b6309f4f4dd16605ee51f1bcd202c4
+lib64/libdiag_system.so
+product/lib64/libimscamera_jni.so
+product/lib64/libimsmedia_jni.so
+vendor/lib64/lib-imsvtcore.so|f6808e788543e0b47b6a3664b7caf799
+vendor/lib64/lib-imsxml.so|16a2ab49a045cd1f7a46bb8b60845df0
+lib64/librcc.so
+lib64/vendor.qti.imsrtpservice@1.0.so
+-priv-app/ims/ims.apk|426be1b83d6f608107d6dcf587080551abeab3e2
+vendor/bin/ims_rtp_daemon
+vendor/bin/imsdatadaemon
+vendor/bin/imsqmidaemon
+vendor/bin/imsrcsd
+vendor/framework/qti-vzw-ims-internal.jar
+vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
+vendor/lib64/lib-dplmedia.so
+vendor/lib64/lib-imsSDP.so
+vendor/lib64/lib-imscmservice.so
+vendor/lib64/lib-imsdpl.so
+vendor/lib64/lib-imsqimf.so
+vendor/lib64/lib-imsxml.so
+vendor/lib64/lib-rtpcommon.so
+vendor/lib64/lib-rtpcore.so
+vendor/lib64/lib-rtpdaemoninterface.so
+vendor/lib64/lib-rtpsl.so
+vendor/lib64/lib-uceservice.so
+vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
+vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
 # Sensors - from op3 - PKQ1.181203.001
 vendor/bin/sensors.qti|34b67b318750daa1170730f4ffc0a9b46ee1777b
