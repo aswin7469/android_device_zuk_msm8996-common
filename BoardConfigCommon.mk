@@ -128,6 +128,9 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
+# Display- surfaceflinger
+TARGET_USES_AOSP_SURFACEFLINGER := true
+
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
