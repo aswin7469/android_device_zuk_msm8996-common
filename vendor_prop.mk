@@ -74,7 +74,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=16m \
     dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.5
+    dalvik.vm.heaptargetutilization=0.75
 
 # Dirac algo tsx 9/12
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -92,13 +92,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Data modules
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent \
     persist.radio.aosp_usr_pref_sel=true \
     persist.data.netmgrd.qos.enable=true \
-    ro.vendor.use_data_netmgrd=true \
-    persist.data.iwlan=1 \
-    persist.data.iwlan.ipsec.ap=1 \
+    ro.vendor.use_data_netmgrd=true
 
 # Display (Qualcomm AD)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -137,8 +134,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # HwUi
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     hwui.disable_vsync=true \
-    debug.sf.recomputecrop=0 \
-    debug.egl.hw=1 \
     debug.composition.type=c2d  \
     persist.sys.composition.type=c2d \
     ro.config.dyn_ram=true \
@@ -148,20 +143,23 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.hwui.path_cache_size=96 \
     ro.hwui.gradient_cache_size=3 \
     ro.hwui.drop_shadow_cache_size=24 \
-    dalvik.vm.heaptargetutilization=0.75 \
-    debug.sf.disable_backpressure=0 \
-    debug.sf.latch_unsignaled=1 \
-    debug.sf.hw=1 \
     ro.sf.compbypass.enable=0
 
 # IMS stuffs
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1 \
-    persist.radio.VT_ENABLE=1 \
-    persist.vendor.data.iwlan.enable=true
+    persist.radio.volte.dan_support=true \
+    persist.vendor.qti.telephony.vt_cam_interface=1
+
+# IWLAN
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.vendor.data.iwlan.enable=true \
+    persist.data.iwlan=1 \
+    persist.data.iwlan.ipsec.ap=1 \
+    persist.vendor.sys.cnd.iwlan=1
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -187,32 +185,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     vendor.rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
+    ro.telephony.call_ring.multiple=false \
+    ro.telephony.default_cdma_sub=0 \
     ro.telephony.default_network=20,20 \
-    telephony.lteOnCdmaDevice=1 \
-    android.telephony.apn-restore=24000 \
-    persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.process_sups_ind=1 \
+    persist.data.qmi.adb_logmask=0 \
+    persist.net.doxlat=true \
+    persist.radio.force_on_dc=true \
     persist.radio.multisim.config=dsds \
-    persist.vendor.radio.sw_mbn_update=1 \
-    persist.vendor.radio.sw_mbn_volte=1 \
-    persist.vendor.radio.sw_mbn_openmkt=1 \
-    persist.vendor.radio.hw_mbn_update=1 \
-    persist.radio.primarycard=true \
-    persist.radio.flexmap_type=dds \
-    persist.vendor.radio.rat_on=combine \
-    persist.radio.nodisplaytext=true \
-    persist.vendor.radio.ignore_dom_time=10 \
-    persist.logd.size.radio=2M \
-    persist.radio.multisim.config=dsds \
-    persist.radio.apm_sim_not_pwdn=1 \
-    persist.radio.rat_on=combine \
-    persist.radio.data_ltd_sys_ind=1 \
-    persist.radio.data_con_rprt=1 \
-    persist.radio.calls.on.ims=1 \
+    persist.radio.redir_party_num=1 \
+    persist.radio.sw_mbn_update=1 \
+    persist.radio.hw_mbn_update=1 \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.sys.cust.lte_config=true \
-    persist.rcs.supported=1
+    persist.vendor.radio.sib16_support=1 \
+    persist.vendor.radio.add_power_save=1 \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -242,7 +230,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=500000 \
     debug.sf.early_app_phase_offset_ns=500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
-    debug.sf.early_gl_app_phase_offset_ns=15000000
+    debug.sf.early_gl_app_phase_offset_ns=15000000 \
+    debug.sf.disable_backpressure=0 \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.recomputecrop=0
 
 # TimeService
 PRODUCT_PROPERTY_OVERRIDES += \
