@@ -929,6 +929,13 @@
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
+    <!-- Integer parameters of the wifi to cellular handover feature
+         wifi should not stick to bad networks -->
+    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_24GHz">-85</integer>
+    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-82</integer>
+    <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_24GHz">-73</integer>
+    <integer name="config_wifi_framework_wifi_score_low_rssi_threshold_5GHz">-70</integer>
+
     <!-- Is the device capable of hot swapping an ICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
