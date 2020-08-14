@@ -64,12 +64,12 @@ vendor/lib/libaudioalsa.so
 vendor/lib/libqtigef.so
 vendor/etc/audio_tuning_mixer.txt
 
-# Bluetooth - from OnePlus5 - PKQ1.180716.001 2002242003
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|9f0bbbbc45cd57eed0175c1ff06b83473ea5c392
+# Bluetooth - from LA.UM.8.6.r1-03400-89xx.0
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|063d4838548e0f3546b509ece621e5f97b51bed0
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|a979981c55f3dcaf6cf2212e71b901ca4d58b959
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|758254b82f17d788d9753bf68a116e287523e6d2
-vendor/lib64/libbtnv.so|a37eef43cbac2be29281e1a6cbdcc14ca64c863c
-vendor/lib64/libbt-hidlclient.so|185432ad48e32b1f9d49a6b974f2a5e1ed1a355f
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|66f5b40d50e91be92d7ab3500641c9a5b3b2f367
+vendor/lib64/libbtnv.so|143ba8a42154a26469b87243ae3e1cd5e9565b13
+vendor/lib64/libbt-hidlclient.so|4682c8711fe78bb73448b34c30181948989400bf
 
 # Bluetooth ANT+ - from OnePlus5 - PKQ1.180716.001 2002242003
 -lib/libantradio.so|d41385a586a43d1c1ed1e315b65fa26bd2393411
@@ -80,8 +80,8 @@ lib64/com.qualcomm.qti.ant@1.0.so|29ecc1a9134dd2146f358e65c830059d3fa6c6d9
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|50056005be5fe5a8420599dd70e4266abf6a9866
 vendor/lib64/com.qualcomm.qti.ant@1.0.so|05e6190e6feb2f23b86e1ce4517b73712465bb2d
 
-# Bluetooth (shared dependencies) - from OnePlus5 - PKQ1.180716.001 2002242003
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|db3afdb3dcc6e39effed66e6397131a1dafd86a1
+# Bluetooth (dependencies) - from LA.UM.8.6.r1-03400-89xx.0
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|027c226838e80a04209e5fb6a8882ce78c3b4222
 
 # Bluetooth (aptX) -  from coral-user 10 QQ2A.200305.003 6156912 release
 product/lib64/libaptX_encoder.so|59d896f337f570eaf54a480261f50ccc 
