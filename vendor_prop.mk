@@ -137,6 +137,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.hwui.path_cache_size=96 \
     ro.hwui.gradient_cache_size=3 \
     ro.hwui.drop_shadow_cache_size=24 \
+    ro.hwui.texture_cache_flushrate=0.4 \
+    ro.hwui.text_small_cache_width=1024 \
+    ro.hwui.text_small_cache_height=1024 \
+    ro.hwui.text_large_cache_width=2048 \
+    ro.hwui.text_large_cache_height=1024 \
     ro.sf.compbypass.enable=0
 
 # Higher fling velocities
