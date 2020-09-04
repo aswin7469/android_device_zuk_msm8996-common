@@ -117,22 +117,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sdm.support_writeback=0 \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
-    persist.hwc.enable_vds=1 \
-    persist.sys.wfd.virtual=0 \
     ro.opengles.version=196610 \
     vendor.display.disable_rotator_downscale=1 \
-    vendor.display.disable_skip_validate=1 \
-    vendor.gralloc.enable_fb_ubwc=1 \
-    vendor.video.disable.ubwc=1 \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.nohdcp=1
+    vendor.display.disable_skip_validate=1
 
 # HwUi
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    hwui.disable_vsync=true \
-    debug.composition.type=c2d  \
-    persist.sys.composition.type=c2d \
-    ro.config.dyn_ram=true \
     ro.hwui.texture_cache_size=276 \
     ro.hwui.layer_cache_size=144 \
     ro.hwui.r_buffer_cache_size=24 \
@@ -143,8 +133,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.hwui.text_small_cache_width=1024 \
     ro.hwui.text_small_cache_height=1024 \
     ro.hwui.text_large_cache_width=2048 \
-    ro.hwui.text_large_cache_height=1024 \
-    ro.sf.compbypass.enable=0
+    ro.hwui.text_large_cache_height=1024
 
 # Higher fling velocities
 # for smoother scrolling and better responsiveness
@@ -160,7 +149,12 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.dbg.wfc_avail_ovr=1 \
     persist.radio.volte.dan_support=true \
     persist.radio.VT_ENABLE=1 \
+    persist.vendor.radio.VT_HYBRID_ENABLE=1 \
+    persist.vendor.radio.videopause.mode=1 \
+    persist.qti.telephony.vt_cam_interface=2 \
+    persist.radio.VT_CAM_INTERFACE=2 \
     persist.vendor.qti.telephony.vt_cam_interface=2 \
+    persist.vendor.radio.VT_CAM_INTERFACE=2 \
     persist.vendor.vt.supported=1
 
 # IWLAN
@@ -276,11 +270,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_hwc_vds=1 \
     persist.debug.wfd.enable=1 \
-    vendor.video.disable.ubwc=1 \
     persist.sys.wfd.virtual=0 \
-    vendor.gralloc.disable_wb_ubwc=1 \
+    persist.hwc.enable_vds=1 \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.video.disable.ubwc=1 \
     persist.sys.wfd.nohdcp=1
 
 # Zygote preforking
