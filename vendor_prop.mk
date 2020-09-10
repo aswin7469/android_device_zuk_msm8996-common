@@ -22,6 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.speaker=true \
     persist.vendor.audio.fluence.voicecall=true \
     persist.vendor.audio.fluence.voicerec=false \
+    persist.vendor.bt.enable.splita2dp=false \
     ro.vendor.audio.sdk.fluencetype=fluence \
     ro.vendor.audio.sdk.ssr=false \
     vendor.audio.dolby.ds2.enabled=false \
@@ -41,10 +42,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    bluetooth.hfp.client=1 \
+    bt.max.hfpclient.connections=1 \
     vendor.qcom.bluetooth.soc=rome \
-    ro.vendor.bluetooth.wipower=false \
-    ro.vendor.bluetooth.emb_wp_mode=false \
+    ro.bluetooth.dun=true \
+    ro.bluetooth.hfp.ver=1.7 \
+    ro.bluetooth.sap=true \
+    ro.btconfig.if=uart \
+    ro.btconfig.vendor=qcom \
+    ro.btconfig.chip=QCA6164 \
+    ro.btconfig.dev=/dev/ttyHS0 \
     ro.vendor.bt.bdaddr_path=/mnt/vendor/persist/bluetooth/bt_mac
 
 # Camera
