@@ -152,8 +152,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.radio.VT_CAM_INTERFACE=2 \
     persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.VT_CAM_INTERFACE=2 \
-    persist.radio.volte.dan_support=true \
-    persist.radio.calls.on.ims=1 \
     persist.vendor.vt.supported=1
 
 # Iorapd
@@ -221,7 +219,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.add_power_save=1 \
-    persist.sys.fflag.override.settings_network_and_internet_v2=true
+    persist.radio.aosp_usr_pref_sel=true
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
