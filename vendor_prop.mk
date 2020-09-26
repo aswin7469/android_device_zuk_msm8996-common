@@ -288,7 +288,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.enable_vds=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
-    persist.sys.wfd.nohdcp=1
+    persist.sys.wfd.nohdcp=1 \
+    debug.sf.enable_hwc_vds=1
 
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
