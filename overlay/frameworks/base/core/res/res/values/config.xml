@@ -1084,4 +1084,7 @@
         <item>0:2:15</item>
     </string-array>
 
+    <!-- Whether to show Enhanced Connectivity switch in Developer Options -->
+    <bool name="config_show_enhanced_connectivity">true</bool>
+
 </resources>
