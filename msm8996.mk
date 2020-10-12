@@ -300,6 +300,8 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
     libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
