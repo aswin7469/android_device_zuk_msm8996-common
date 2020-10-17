@@ -1052,9 +1052,6 @@
         <item>0:2:15</item>
     </string-array>
 
-    <!-- Whether to show Enhanced Connectivity switch in Developer Options -->
-    <bool name="config_show_enhanced_connectivity">true</bool>
-
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
 
