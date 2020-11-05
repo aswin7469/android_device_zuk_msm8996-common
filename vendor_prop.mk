@@ -197,6 +197,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ril.subscription.types=NV,RUIM \
     ro.telephony.default_network=10 \
+    ro.carriersetup.vzw_consent_page=true \
     telephony.lteOnCdmaDevice=1 \
     android.telephony.apn-restore=24000 \
     persist.radio.sw_mbn_update=1 \
