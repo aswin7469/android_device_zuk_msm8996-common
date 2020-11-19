@@ -279,7 +279,7 @@ PRODUCT_PACKAGES += \
 
 # Lib shim
 PRODUCT_PACKAGES += \
-    libshim_wfd
+    libshim_wfdservice
 
 # Lights
 PRODUCT_PACKAGES += \
