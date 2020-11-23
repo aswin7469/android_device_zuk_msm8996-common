@@ -183,7 +183,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     libdisplayconfig \
     libdisplayconfig.qti \
-    liboverlay \
     libgenlock \
     libqdMetaData \
     vendor.display.config@2.0.vendor \
