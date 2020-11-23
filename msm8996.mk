@@ -191,7 +191,6 @@ PRODUCT_PACKAGES += \
     libgenlock \
     liboverlay \
     libtinyxml \
-    libqdMetaData.system \
     libvulkan
 
 PRODUCT_COPY_FILES += \
