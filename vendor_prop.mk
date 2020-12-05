@@ -235,6 +235,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.iwlan_mux=9 \
     persist.data.df.dev_name=rmnet_usb0
 
+# Radio (silence ims dpl logs)
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.ims.disableIMSLogs=1 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableDebugDataPathLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableSigHandler=1 \
+    persist.vendor.ims.disableQXDMLogs=1
+
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.protected_contents=true \
