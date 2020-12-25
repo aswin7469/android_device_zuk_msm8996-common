@@ -699,6 +699,12 @@ vendor/lib64/lib-uceservice.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
+# RTP Libs - from vangogh:11/RKQ1.200826.002
+system_ext/lib/libmmrtpdecoder.so|e50c35366bd428ac29e8a828cfd6b22aa08a0a55
+system_ext/lib/libmmrtpencoder.so|5614934db1f7302b91abf5ed123132b346b24038
+system_ext/lib64/libmmrtpdecoder.so|5f468a1a97b28fa5212205e57b849605d5cb6b10
+system_ext/lib64/libmmrtpencoder.so|42b99f85469607c6c03d3701885e5f198305b971
+
 # Sensors - from LA.UM.9.6.2.r1-03600-89xx.0
 vendor/bin/sensors.qti|d87eb74b701f9e047c8ed7deb5fcd43a5639572a
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
