@@ -246,6 +246,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
+    ro.surface_flinger.max_virtual_display_dimension=4096 \
     ro.surface_flinger.protected_contents=true \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.set_touch_timer_ms=200 \
