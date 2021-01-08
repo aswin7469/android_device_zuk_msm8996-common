@@ -168,9 +168,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.radio.calls.on.ims=1 \
     persist.vendor.vt.supported=1
 
-# Enable iorapd perfetto tracing for app starts
+# Iorapd
 PRODUCT_PROPERTY_OVERRIDES += \
-    iorapd.perfetto.enable=true
+    iorapd.perfetto.enable=true \
+    iorapd.readahead.enable=true
 
 # IWLAN
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
