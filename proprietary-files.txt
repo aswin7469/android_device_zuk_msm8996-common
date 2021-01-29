@@ -475,6 +475,9 @@ vendor/firmware/a530v3_seq.fw2
 # IMS - from daisy - QKQ1.191002.002 V11.0.2.0.QDLMIXM
 vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|ba5ffc588422c1b0f3ac8135314db2c88d62671e
 
+# IMS - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|5d71371d3eb10481f95a018481dfb62a5929110d
+
 # Keystore
 vendor/lib64/hw/keystore.msm8996.so
 vendor/lib/hw/keystore.msm8996.so
