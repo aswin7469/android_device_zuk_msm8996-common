@@ -261,6 +261,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <interface>
             <name>ISensors</name>
             <instance>default</instance>
+        <fqname>@1.0::ISensors/default</fqname>
+        <fqname>@1.0::ISensorManager/default</fqname>
         </interface>
     </hal>
     <hal format="hidl">
