@@ -40,6 +40,8 @@ using android::base::SetProperty;
 
 char const *heapminfree;
 char const *heapmaxfree;
+char const *heapstartsize;
+char const *heaptargetutilization;
 
 void check_device()
 {
@@ -48,21 +50,25 @@ void check_device()
 	sysinfo(&sys);
 
 	if (sys.totalram > 3072ull * 1024 * 1024) {
-		// from - phone-xxxhdpi-4096-dalvik-heap.mk
-		heapminfree = "8m";
-		heapmaxfree = "32m";
-	} else {
-		// from - phone-xxhdpi-3072-dalvik-heap.mk
+		// from - LA.UM.9.6.2.r1-03600-89xx.0
 		heapminfree = "4m";
-		heapmaxfree = "16m";
+		heapmaxfree = "8m";
+                heapstartsize = "16m";
+	        heaptargetutilization = "0.75";
+	} else {
+		// from - phone-xxhdpi-4096-dalvik-heap.mk
+                heapminfree = "8m";
+                heapmaxfree = "16m";
+                heapstartsize = "8m";
+                heaptargetutilization = "0.6";
 	}
 }
 
 void vendor_load_properties()
 {
 	check_device();
-
+    SetProperty("dalvik.vm.heapstartsize", heapstartsize);
+    SetProperty("dalvik.vm.heaptargetutilization", heaptargetutilization);
     SetProperty("dalvik.vm.heapminfree", heapminfree);
     SetProperty("dalvik.vm.heapmaxfree", heapmaxfree);
 }
-

@@ -8,8 +8,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
-dalvik.vm.dex2oat-filter=speed \
-dalvik.vm.image-dex2oat-filter=speed
+   dalvik.vm.dex2oat-filter=speed \
+   dalvik.vm.image-dex2oat-filter=speed
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -71,22 +71,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapstartsize=16m \
     dalvik.vm.heapgrowthlimit=256m \
     dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.dex2oat64.enabled=true \
     ro.sys.fw.dex2oat_thread_count=4
-
-# Dirac algo tsx 9/12
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dirac.acs.controller=qem \
-    persist.dirac.acs.storeSettings=1 \
-    persist.dirac.acs.ignore_error=1
-
-# Dirac headset effect
-    ro.audio.soundfx.dirac=true \
-    persist.audio.dirac.speaker=true
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -157,7 +145,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1 \
-    persist.radio.volte.dan_support=true \
     persist.radio.VT_ENABLE=1 \
     persist.vendor.radio.VT_HYBRID_ENABLE=1 \
     persist.vendor.radio.videopause.mode=1 \
@@ -165,6 +152,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.radio.VT_CAM_INTERFACE=2 \
     persist.vendor.qti.telephony.vt_cam_interface=2 \
     persist.vendor.radio.VT_CAM_INTERFACE=2 \
+    persist.radio.volte.dan_support=true \
     persist.radio.calls.on.ims=1 \
     persist.vendor.vt.supported=1
 
@@ -192,8 +180,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.downgrade_pressure=100 \
     ro.lmk.kill_heaviest_task=true \
     ro.lmk.kill_timeout_ms=100 \
-    ro.lmk.use_minfree_levels=true \
-    ro.lmk.log_stats=true
+    ro.lmk.use_minfree_levels=true
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
