@@ -83,11 +83,6 @@ function blob_fixup() {
         sed -i "s|/firmware/image|/vendor/f/image|g" "${2}"
         ;;
 
-    # Hex edit libwfdnative.so to link missing symbols
-    lib/libwfdnative.so | lib64/libwfdnative.so)
-        patchelf --add-needed "libshim_wfdservice.so" "${2}"
-        ;;
-
     # Hex edit libaudcal.so to store acdbdata in new paths
     vendor/lib/libaudcal.so | vendor/lib64/libaudcal.so)
         sed -i "s|/data/vendor/misc/audio/acdbdata/delta/|/data/vendor/audio/acdbdata/delta/\x00\x00\x00\x00\x00|g" "${2}"
