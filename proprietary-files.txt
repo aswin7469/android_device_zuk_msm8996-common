@@ -1,15 +1,13 @@
-# ADSP - from daisy - QKQ1.191002.002 V11.0.2.0.QDLMIXM
-vendor/bin/adsprpcd|a5e878691577485c9f7ee33dfe02384a13f0a265
-vendor/lib64/libadsprpc.so|3dd28423f6b786584a1c80b2cdb6e22a1c00b0ae
-vendor/lib64/libadsp_default_listener.so|d7436ae6255671b4c3af533b5c89d91d75d5069e
-vendor/lib64/libfastcvadsp_stub.so|f101b66fa4a450b5af2e6aa9f7aaa28f9a876005
-vendor/lib64/libfastcvopt.so|f5e25aa055a57e23530b858bf7dd204a6009effc
-vendor/lib64/libmdsprpc.so|38de6a53d3c2ff60a253c7c6a0d3b46962e8e194
-vendor/lib/libadsprpc.so|e00e8dcb88e9b204fd90bb2c32afcc7fa28dbad1
-vendor/lib/libadsp_default_listener.so|c9a1ee00b32a93a9496ec84393afa0625e929eed
-vendor/lib/libfastcvadsp_stub.so|996345605e1d631151a6b4e9cd9f65b2c7e82dac
-vendor/lib/libfastcvopt.so|2df00c3827fe1db322084cb3935241f17d1532f4
-vendor/lib/libmdsprpc.so|642f74bfec1098397c7ee025e0744badbf14fc39
+# ADSP - from LA.UM.9.6.2.r1-03600-89xx.0
+vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
+vendor/lib/libadsp_default_listener.so|d34ee56137899b914b70d1933d6bdcabde8d8220
+vendor/lib/libadsprpc.so|a8dcd5087ab8f2e573cf4e5838b807b66c3ec304
+vendor/lib/libfastcvadsp_stub.so|70772d0bc39617430e27a21f89fccd93cc757185
+vendor/lib/libfastcvopt.so|c0c70efbb7ca1cfeea3dedec9f9d911c39486fce
+vendor/lib64/libadsp_default_listener.so|aa3b51b544032a250ab02687c0200152f80a23dd
+vendor/lib64/libadsprpc.so|9c72ce03841cb6011ecdd78c894ee5e1c60a5b6d
+vendor/lib64/libfastcvadsp_stub.so|f4535845bc4f40e3cb8e79d090e5ed87b0acfbb0
+vendor/lib64/libfastcvopt.so|f98fea81849fe4995f0e266534bdb04006717fc2
 
 # ADSP
 vendor/lib/libadsp_hvx_callback_skel.so
