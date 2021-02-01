@@ -180,7 +180,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
-    vidc.enc.dcvs.extra-buff-count=2
+    vidc.enc.dcvs.extra-buff-count=2 \
+    persist.sys.fflag.override.settings_fuse=false
 
 # Memory optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
