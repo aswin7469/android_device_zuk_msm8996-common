@@ -183,6 +183,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     libdisplayconfig \
     libdisplayconfig.qti \
+    libhwc2on1adapter \
     libgenlock \
     libqdMetaData \
     vendor.display.config@2.0.vendor \
